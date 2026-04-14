@@ -394,5 +394,6 @@ int main()
 	printAll(readGames, SIZE, "READ FROM BINARY FILE");
 	
 	delete[] games;
+	delete[] readGames;
 	return 0;
 }

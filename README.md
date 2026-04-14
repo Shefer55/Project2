@@ -1,7 +1,7 @@
 # Project2
 Структуры и объединения. Сортировка массива структур. Работа с файлами.
 
-Вариант 8. Задание 1.
+Вариант 8.
 
 Определить структурный тип, описывающий компьютерные игры (название игры,
 студия разработчик, стоимость подписки, объем аудитории игроков,
@@ -11,7 +11,9 @@
 Затем новый массив отсортировать по объему аудитории. Вывести все данные по
 конкретной игре. Вывести 4 самых недорогих игр. Реализовать функцию изменения
 игры. В отдельный массив поместить все мобильные игры, в которых можно
-погонять. Реализовать вывод отфильтрованных данных в виде оберточной функции.
+погонять. Реализовать вывод отфильтрованных данных в виде оберточной функции. 
+Считать из текстового файла данные числового поля. Сделать чтение/запись своей 
+структуры в бинарный файл. Оформить в виде подпрограмм.
 
 Требования к решению:
 1. Использовать функции для каждой подзадачи.
@@ -22,12 +24,13 @@
 4. Ввод данных осуществить в виде инициализации массива структур
 внутри программы (не с клавиатуры).
 5. Алгоритм сортировки – пузырьком.
-6. После выполнения следующего занятия выложить решение на github.
+6. Использовать библиотеку fstream.
+7. Оформить код чтения/записи в файл с использованием подпрограмм.
 
 Результат выполнения кода:
     
      =================== ALL GAMES ===================
-    
+     
      Name                    Developer       Price      Players      Platforms               Genre
      ---------------------------------------------------------------------------------------------------------
      DOOM Eternal            id Software     $9.99      5 mil.       PC:1 Mob:0 Pad:0        Shooter
@@ -96,3 +99,63 @@
      ---------------------------------------------------------------------------------------------------------
      Asphalt 9               Gameloft        $0.99      50 mil.      PC:0 Mob:1 Pad:0        Racing
      Forza Horizon 5         Playground      $12.99     15 mil.      PC:1 Mob:1 Pad:1        Racing
+    
+     =================== WORKING WITH A TEXT FILE ===================
+    
+     The text file has been created: developers.txt.
+     Updated 20 developers from the developers.txt file.
+    
+     =================== UPDATED FROM TEXT FILE ===================
+    
+     Name                    Developer       Price      Players      Platforms               Genre
+     ---------------------------------------------------------------------------------------------------------
+     DOOM Eternal            Bethesda        $9.99      5 mil.       PC:1 Mob:0 Pad:0        Shooter
+     DOOM 2016               Bethesda        $7.99      4 mil.       PC:1 Mob:0 Pad:0        Shooter
+     Quake Champions         Bethesda        $0.00      1 mil.       PC:1 Mob:0 Pad:0        Shooter
+     CS:GO                   ValveNew        $0.99      25 mil.      PC:1 Mob:0 Pad:0        Shooter
+     PUBG Mobile             Krafton         $0.00      100 mil.     PC:0 Mob:1 Pad:0        Shooter
+     Call of Duty Mobile     Activision      $0.99      80 mil.      PC:0 Mob:1 Pad:0        Shooter
+     Half-Life 2             ValveNew        $2.99      12 mil.      PC:1 Mob:0 Pad:0        Shooter
+     Wolfenstein             Bethesda        $8.99      3 mil.       PC:1 Mob:0 Pad:0        Shooter
+     Asphalt 9               Gameloft        $0.99      50 mil.      PC:0 Mob:1 Pad:0        Racing
+     Need for Speed 2        Criterion       $12.89     9 mil.       PC:1 Mob:0 Pad:1        Racing
+     Forza Horizon 5         PlaygroundGames $12.99     15 mil.      PC:1 Mob:1 Pad:1        Racing
+     Cyberpunk 2077          CDPRed          $14.99     25 mil.      PC:1 Mob:0 Pad:0        RPG
+     The Witcher 3           CDPRed          $9.99      20 mil.      PC:1 Mob:0 Pad:0        RPG
+     Genshin Impact          HoYoverse       $0.00      60 mil.      PC:1 Mob:1 Pad:0        RPG
+     StarCraft II            Blizzard        $0.00      6 mil.       PC:1 Mob:0 Pad:0        Strategy
+     Warcraft III            Blizzard        $7.99      4 mil.       PC:1 Mob:0 Pad:0        Strategy
+     Microsoft Flight Sim    AsoboStudio     $15.99     5 mil.       PC:1 Mob:0 Pad:0        Flight simulator
+     IL-2 Sturmovik          1CGS            $19.99     1 mil.       PC:1 Mob:0 Pad:0        Flight simulator
+     Minecraft               MojangStudios   $7.99      140 mil.     PC:1 Mob:1 Pad:0        Adventure
+     Portal 2                ValveNew        $3.99      8 mil.       PC:1 Mob:0 Pad:0        Action
+    
+     =================== WORKING WITH A BINARY FILE ===================
+    
+     The data is saved to a binary file: games.bin.
+     The data is downloaded from a binary file: games.bin.
+    
+     =================== READ FROM BINARY FILE ===================
+    
+     Name                    Developer       Price      Players      Platforms               Genre
+     ---------------------------------------------------------------------------------------------------------
+     DOOM Eternal            Bethesda        $9.99      5 mil.       PC:1 Mob:0 Pad:0        Shooter
+     DOOM 2016               Bethesda        $7.99      4 mil.       PC:1 Mob:0 Pad:0        Shooter
+     Quake Champions         Bethesda        $0.00      1 mil.       PC:1 Mob:0 Pad:0        Shooter
+     CS:GO                   ValveNew        $0.99      25 mil.      PC:1 Mob:0 Pad:0        Shooter
+     PUBG Mobile             Krafton         $0.00      100 mil.     PC:0 Mob:1 Pad:0        Shooter
+     Call of Duty Mobile     Activision      $0.99      80 mil.      PC:0 Mob:1 Pad:0        Shooter
+     Half-Life 2             ValveNew        $2.99      12 mil.      PC:1 Mob:0 Pad:0        Shooter
+     Wolfenstein             Bethesda        $8.99      3 mil.       PC:1 Mob:0 Pad:0        Shooter
+     Asphalt 9               Gameloft        $0.99      50 mil.      PC:0 Mob:1 Pad:0        Racing
+     Need for Speed 2        Criterion       $12.89     9 mil.       PC:1 Mob:0 Pad:1        Racing
+     Forza Horizon 5         PlaygroundGames $12.99     15 mil.      PC:1 Mob:1 Pad:1        Racing
+     Cyberpunk 2077          CDPRed          $14.99     25 mil.      PC:1 Mob:0 Pad:0        RPG
+     The Witcher 3           CDPRed          $9.99      20 mil.      PC:1 Mob:0 Pad:0        RPG
+     Genshin Impact          HoYoverse       $0.00      60 mil.      PC:1 Mob:1 Pad:0        RPG
+     StarCraft II            Blizzard        $0.00      6 mil.       PC:1 Mob:0 Pad:0        Strategy
+     Warcraft III            Blizzard        $7.99      4 mil.       PC:1 Mob:0 Pad:0        Strategy
+     Microsoft Flight Sim    AsoboStudio     $15.99     5 mil.       PC:1 Mob:0 Pad:0        Flight simulator
+     IL-2 Sturmovik          1CGS            $19.99     1 mil.       PC:1 Mob:0 Pad:0        Flight simulator
+     Minecraft               MojangStudios   $7.99      140 mil.     PC:1 Mob:1 Pad:0        Adventure
+     Portal 2                ValveNew        $3.99      8 mil.       PC:1 Mob:0 Pad:0        Action
